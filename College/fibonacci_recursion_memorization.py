@@ -63,6 +63,5 @@ else:
     print("*Comparison")
     print("-" * 30)
     print(f" Using recursion : {result_1} \n Time taken: {time1} seconds")
-    print("-" * 30)
     print(f" Using memorization : {result_2} \n Time taken : {time2}")
     print("-" * 30)
