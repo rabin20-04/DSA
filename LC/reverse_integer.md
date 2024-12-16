@@ -45,7 +45,7 @@ Given a signed 32-bit integer `x`, return `x` with its digits reversed. If rever
 - `-2^31 <= x <= 2^31 - 1`
 
 
-# 
+# -----------------------------
 
 ```python
 class Solution:
