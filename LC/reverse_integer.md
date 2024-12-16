@@ -1,6 +1,7 @@
-
 # 7. Reverse Integer
-M
+
+## Difficulty
+- Medium
 
 ## Topics
 - Math
@@ -17,29 +18,15 @@ Given a signed 32-bit integer `x`, return `x` with its digits reversed. If rever
 
 ## Examples
 
-### Example 1
-**Input:**  
-`x = 123`  
-**Output:**  
-`321`
+| **Input**   | **Output** | **Explanation**                |
+|-------------|------------|--------------------------------|
+| `x = 123`   | `321`      | The digits of `123` reversed. |
+| `x = -123`  | `-321`     | The digits of `-123` reversed.|
+| `x = 120`   | `21`       | The digits of `120` reversed. |
 
 ---
 
-### Example 2
-**Input:**  
-`x = -123`  
-**Output:**  
-`-321`
 
----
-
-### Example 3
-**Input:**  
-`x = 120`  
-**Output:**  
-`21`
-
----
 
 ## Constraints
 - `-2^31 <= x <= 2^31 - 1`
