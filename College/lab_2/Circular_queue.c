@@ -11,7 +11,7 @@ void enqueue(CQ *Q, int element)
 {
     if (Q->FRONT == (Q->REAR + 1) % MAX)
     {
-        printf("Queue is full\nCannot enqueue %d!\n",element);
+        printf("!!! Queue is full\n***Cannot enqueue %d!***\n", element);
     }
     else
     {
