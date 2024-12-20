@@ -8,32 +8,16 @@ def fibo_recursion(n):
         return fibo_recursion(n - 1) + fibo_recursion(n - 2)
 
 
-def fibo_memorization(n, table=None):
-    if table is None:
-        table = {}
-    if n == 1 or n == 2:
-        return 1
-
-    if n not in table[n]:
-        result = fibo_memorization(n - 1, table) + fibo_memorization(n - 2, table)
-        table[n] = result
-    return table[n]
-
-
-global table
 table = {}
 
 
-def fibo_memorization(n):
-    if n == 2 or n == 1:
+def fibo_memorization(num):
+    if num == 1 or num == 2:
         return 1
+    elif num not in table:
+        table[num] = fibo_memorization(num - 1) + fibo_memorization(num - 2)
 
-    else:
-        if n not in table:
-            result = fibo_memorization(n - 1) + fibo_memorization(n - 2)
-            table[n] = result
-
-    return table[n]
+    return table[num]
 
 
 print("-" * 30)
@@ -44,24 +28,28 @@ ask_option = int(
     )
 )
 user_input = int(input("Enter nth term :"))
-inital_time1 = time.time()
-result_1 = fibo_recursion(user_input)
-time1 = time.time() - inital_time1
 
-inital_time2 = time.time()
-result_2 = fibo_memorization(user_input)
-time2 = time.time() - inital_time2
 if ask_option == 1:
-    print("*Recursion")
+    inital_time1 = time.time()
     result_1 = fibo_recursion(user_input)
+    time1 = time.time() - inital_time1
+    print("*Recursion")
     print(f" Using recursion : {result_1} \n Time taken: {time1} seconds")
 elif ask_option == 2:
-    print("*Memorizaation")
+    inital_time2 = time.time()
     result_2 = fibo_memorization(user_input)
+    time2 = time.time() - inital_time2
+    print("*Memorizaation")
     print(f" Using memorization : {result_2} \n Time taken : {time2}")
 else:
     print("*Comparison")
     print("-" * 30)
+    inital_time1 = time.time()
+    result_1 = fibo_recursion(user_input)
+    time1 = time.time() - inital_time1
+    inital_time2 = time.time()
+    result_2 = fibo_memorization(user_input)
+    time2 = time.time() - inital_time2
     print(f" Using recursion : {result_1} \n Time taken: {time1} seconds")
     print(f" Using memorization : {result_2} \n Time taken : {time2}")
     print("-" * 30)
