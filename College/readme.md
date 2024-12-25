@@ -8,6 +8,7 @@
 ### Lab_2 , assignment_2
 
 - Circular Queue `c`
+- Linear Queue (Works on FIFO) `c`
 - Tail recursion Factorial `py`
 
 ### Lab_3 , assignment_3
