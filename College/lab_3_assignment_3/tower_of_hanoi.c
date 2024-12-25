@@ -8,7 +8,7 @@ int main()
     char x = 'A', y = 'B', z = 'C';
     printf("Enter a number of discs : ");
     scanf("%d", &num);
-    tower_of_hanoi(num, x, y, z);
+    tower_of_hanoi(num, x, z, y);
     return 0;
 }
 
