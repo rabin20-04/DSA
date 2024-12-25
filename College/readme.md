@@ -9,3 +9,8 @@
 
 - Circular Queue `c`
 - Tail recursion Factorial `py`
+
+### Lab_3 , assignment_3
+
+- GCD iteration,recursion `py` , `c`
+- Tower of Hanoi `py`, `c`
