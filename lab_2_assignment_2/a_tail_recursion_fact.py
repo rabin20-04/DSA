@@ -24,4 +24,4 @@ time3 = time.time()
 print(f"Result fact-recursion : {result2}, time :{time3-time2}")
 print(f"Result tail-recursion : {result1}, time : {time2-time1}")
 
-print(f"diff:{(time3-time2)-(time2-time1)}")
+# print(f"diff:{(time3-time2)-(time2-time1)}")
